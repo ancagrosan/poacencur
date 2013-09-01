@@ -1,0 +1,20 @@
+
+<div>
+	<img src="/images/header.jpg">
+</div>
+
+<div>
+	<p class="form">
+	  <input type="text" id="path" />
+	  <label class="add-photo-btn">upload
+		<span>
+		   <input type="file" id="file-upload" name="file-upload" />
+		</span>
+	  </label>
+	</p>
+</div>
+
+<div>
+	<img id="image" style="cursor:pointer;" src="img.jpg" />
+	<input type='file' style="display:none;" name="photosubmit" id="photosubmit"/>
+</div>
