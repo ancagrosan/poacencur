@@ -8,22 +8,43 @@
 
 <br/>
 <div class="row-fluid">
-	<div class="pull-right" style="float: right;">
-		<div class="form-vertical">
+	<div id="radio-sel" class="pull-right">
+		<div id="before" class="form-vertical">
 			<label class="control-label">I-ai trage-o?</label>
 			<label class="radio">
-				<input type="radio" name="wouldyou" value="Da"/>
+				<input type="radio" name="wouldyou" id="r1" value="Da"/>
 				Da
 			</label>
 			<label class="radio">
-				<input type="radio" name="wouldyou" value="Nu"/>
+				<input type="radio" name="wouldyou" id="r2" value="Nu"/>
 				Nu
 			 </label>
 			<label class="radio">
-				<input type="radio" name="wouldyou" value="Poace"/>
+				<input type="radio" name="wouldyou" id="r3" value="Poace"/>
 				Poacencur
 			 </label>
 		</div>
+
+		<div id="loading" class="hide">
+		   <p><img src="/images/ajax-loader.gif"/></p>
+		</div>
+
+		<div id="after" class="hide form-vertical">
+			<label class="control-label">I-ai trage-o?</label>
+			<label class="percentage">
+				<input type="radio" name="nu" id="r4"/>
+				Da [0%]
+			</label>
+			<label class="percentage">
+				<input type="radio" name="nu" id="r5"/>
+				Nu [0%]
+			 </label>
+			<label class="percentage">
+				<input type="radio" name="aha" id="r6" checked="checked"/>
+				Poacencur [100%]
+			 </label>
+		</div>
+
 	</div>
 
 	<a href="#myModal" data-toggle="modal" class="btn btn-warning">delete</a>
@@ -39,19 +60,17 @@
 	<div class="modal-dialog">
 		<div class="modal-content">
 			<!-- dialog body -->
-			<div class="modal-body">
-				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			<div class="modal-body modal-confirm">
 				Daca stergi, dispare de tot. Sigur?
 			</div>
 			<!-- dialog buttons -->
-			<div class="modal-footer">
+			<div class="modal-footer modal-confirm">
 				<a data-dismiss="modal"><button type="button" class="btn">Cancel</button></a>
 				<a href="/delete/<% $dir_name %>"><button type="button" class="btn">OK</button></a>
 			</div>
 		</div>
 	</div>
 </div>
-
 
 % }
 

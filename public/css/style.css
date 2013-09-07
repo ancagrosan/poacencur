@@ -1,6 +1,7 @@
 .content{
     width:800px;
     margin:0 auto;
+    font-family:'Bitter';
 }
 
 .upload-file{
@@ -34,11 +35,24 @@
 }
 
 .modal-del{
-    width: 400px;
-    margin-left: -200px;
+    width: 300px;
+    margin-left: -150px;
+    font-size: 16px;
 }
 
 .modal-backdrop, .modal-backdrop.fade.in{
     opacity: 0.4;
     background-color: #E70048;
+}
+
+.modal-confirm{
+    text-align: center;
+}
+
+body.loading {
+    overflow: hidden;   
+}
+
+body.loading .modal {
+    display: block;
 }
