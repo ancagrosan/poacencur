@@ -1,7 +1,7 @@
 <!DOCTYPE html>
     <head>
         <meta charset="utf-8">
-        <title>car news about cars, car dealership and much more</title>
+        <title>this is poacencur</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
         <!-- styles -->
@@ -14,6 +14,9 @@
     </head>
     <body>
         <div class="content">
+            <div>
+                <a href="/"><img src="/images/header.jpg"></a>
+            </div>
 % $m->call_next();
         </div>
     </body>

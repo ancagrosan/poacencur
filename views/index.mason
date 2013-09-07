@@ -1,20 +1,11 @@
-
-<div>
-	<img src="/images/header.jpg">
-</div>
-
-<div>
-	<p class="form">
-	  <input type="text" id="path" />
-	  <label class="add-photo-btn">upload
-		<span>
-		   <input type="file" id="file-upload" name="file-upload" />
+<form method="post" id="upload-form" action="/upload" enctype="multipart/form-data">
+	<div class="fileupload fileupload-new upload-file" data-provides="fileupload">
+	  <div class="input-append">
+		<span class="btn btn-file upload-img-btn">
+			<span class="fileupload-new">Upload!</span>
+			<input type="file" id="upload_img" name="upload_img"/>
 		</span>
-	  </label>
-	</p>
-</div>
+	  </div>
+	</div>
+</form>
 
-<div>
-	<img id="image" style="cursor:pointer;" src="img.jpg" />
-	<input type='file' style="display:none;" name="photosubmit" id="photosubmit"/>
-</div>

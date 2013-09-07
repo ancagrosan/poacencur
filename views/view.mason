@@ -1,0 +1,58 @@
+<%args>
+	$dir => undef
+</%args>
+
+% if( $dir ){
+% 	$dir =~ s/.+(\/uploads.+)/$1/i;
+%   my ( $dir_name ) = $dir =~ m/uploads\/(.+)/;
+
+<br/>
+<div class="row-fluid">
+	<div class="pull-right" style="float: right;">
+		<div class="form-vertical">
+			<label class="control-label">I-ai trage-o?</label>
+			<label class="radio">
+				<input type="radio" name="wouldyou" value="Da"/>
+				Da
+			</label>
+			<label class="radio">
+				<input type="radio" name="wouldyou" value="Nu"/>
+				Nu
+			 </label>
+			<label class="radio">
+				<input type="radio" name="wouldyou" value="Poace"/>
+				Poacencur
+			 </label>
+		</div>
+	</div>
+
+	<a href="#myModal" data-toggle="modal" class="btn btn-warning">delete</a>
+
+	<div class="uploaded-img">
+		<img src="<% $dir.'/img.jpg' %>">
+	</div>
+
+</div>
+
+<!-- set up the modal to start hidden and fade in and out -->
+<div id="myModal" class="modal fade modal-del">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<!-- dialog body -->
+			<div class="modal-body">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				Daca stergi, dispare de tot. Sigur?
+			</div>
+			<!-- dialog buttons -->
+			<div class="modal-footer">
+				<a data-dismiss="modal"><button type="button" class="btn">Cancel</button></a>
+				<a href="/delete/<% $dir_name %>"><button type="button" class="btn">OK</button></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+% }
+
+

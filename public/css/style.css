@@ -3,33 +3,42 @@
     margin:0 auto;
 }
 
-.form input[type="file"]{
-  z-index: 999;
-  line-height: 0;
-  font-size: 50px;
-  position: absolute;
-  opacity: 0;
-  filter: alpha(opacity = 0);-ms-filter: "alpha(opacity=0)";
-  cursor: pointer;
-  _cursor: hand;
-  margin: 0;
-  padding:0;
-  left:0;
+.upload-file{
+    padding-top: 40px;
+    width: 300px;
+    margin:0 auto;
 }
-.add-photo-btn{
-   position:relative;
-   overflow:hidden;
-   cursor:pointer;
-   text-align:center;
-   background-color:#83b81a;
-   color:#fff;
-   display:block;
-   width:197px;
-   height:31px;
-   font-size:18px;
-   line-height:30px;
-   float:left;
+
+.upload-img-btn{
+    font-size: 35px;
+    color: #fff;
+    background: none;
+    width: 300px;
+    height: 100px;
+    line-height: 100px;
+    background-color: #83b81a;
+    font-weight:bold;
+    border: none !important;
+    border-radius: 0;
 }
-input[type="text"]{
-   float:left;
+
+.upload-file :hover{
+    background-color: #83b81a;
+}
+
+.uploaded-img{
+    z-index:-1;
+    width:auto;
+    margin:0 auto;
+    border: black 1px;
+}
+
+.modal-del{
+    width: 400px;
+    margin-left: -200px;
+}
+
+.modal-backdrop, .modal-backdrop.fade.in{
+    opacity: 0.4;
+    background-color: #E70048;
 }
