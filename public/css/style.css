@@ -22,18 +22,25 @@ body{
 
 .upload-img-btn{
     font-size: 20px;
-    color: #fff;
+    color: #6E6E6E;
     background: none;
     width: 200px;
     height: 60px;
     line-height: 60px;
-    background-color: #1D9650;
+    background-color: #FBF2EF;
     border: none !important;
     border-radius: 0;
 }
 
 .upload-file :hover{
-    background-color: #83b81a;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    border: none !important;
+    border-radius: 0;
+    color: #6E6E6E;
+    background: none;
+    background-color: #F5A9A9;
 }
 
 .uploaded-img{
@@ -69,5 +76,38 @@ body.loading {
 
 body.loading .modal {
     display: block;
+}
+.socially-fb{
+    pdding-top: 3px;
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+.delete-btn{
+    font-size: 20px;
+    color: #6E6E6E;
+    background: none;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #FBF2EF;
+    border: none !important;
+    border-radius: 0;
+    text-align: center;
+}
+
+.delete-btn :hover{
+    text-decoration: none;
+}
+
+#footer {
+    color: #fff;
+    background-color: #000;
+    padding-bottom: 0px;
+    position:fixed;
+    bottom:0;
+    width:800%;
+    height:30px;
+    line-height: 30px;
 }
 

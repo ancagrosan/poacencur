@@ -6,8 +6,6 @@ use Dancer ':syntax';
 our $VERSION = '0.1';
 
 get '/' => sub {
-#            $message = 'Something went terribly wrong, but please try again!';
-
     template 'index';
 };
 

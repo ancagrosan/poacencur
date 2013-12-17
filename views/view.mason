@@ -5,11 +5,13 @@
 % if( $dir ){
 % 	$dir =~ s/.+(\/uploads.+)/$1/i;
 %   my ( $dir_name ) = $dir =~ m/uploads\/(.+)/;
+%   my $current_url = "http://poacencur.com/view/$dir_name";
 
 <br/>
 <div class="row-fluid">
-	<div>
-		<span><a href="/">&Icirc;napoi</a></span>
+	<div class="pull-left">
+		<div><a href="/">&Icirc;napoi</a></div>
+		<div class="delete-btn"><a href="#myModal" data-toggle="modal">delete</a></div>
 	</div>
 	<div id="radio-sel" class="pull-right">
 		<div id="before" class="form-vertical">
@@ -56,26 +58,11 @@
 	</div>
 </div>
 
-	<div class="fb-like"
-		data-href="http://poacencur.dev:3000/view/<% $dir_name %>"
-		data-width="450" data-show-faces="true">
-	</div>
-	
-	<div>
-		<a href="#" 
-		  onclick="
-			window.open(
-			  'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 
-			  'facebook-share-dialog', 
-			  'width=626,height=436'); 
-			return false;">
-		  Share
-		</a>
-	</div>
+<div class="social-stuff">
+		<div class="fb-like" data-href="https://facebook.com/poacencur" data-layout="standard" data-action="like" data-show-faces="false"</div>
+		<div class="fb-share-button" data-href="<% $current_url %>" data-type="button_count"></div>
+</div>
 
-	<a href="#myModal" data-toggle="modal" class="btn btn-warning">delete</a>
-	
-	
 </div>
 
 <!-- set up the modal to start hidden and fade in and out -->
@@ -96,3 +83,5 @@
 </div>
 
 % }
+
+<br/><br/>
