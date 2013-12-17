@@ -5,17 +5,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
         <!-- styles -->
-        <link rel="stylesheet" type="text/css" href="/css/lib/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="/css/lib/bootstrap-responsive.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/lib/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="/css/lib/bootstrap-responsive.min.css"/>
         <link rel="stylesheet" type="text/css" href="/css/lib/bootstrap-fileupload.min.css">
-        <link rel="stylesheet" type="text/css" href="/css/style.css">
-        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans">
-        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Bitter">
+        <link rel="stylesheet" type="text/css" href="/css/style.css"/>
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans"/>
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Bitter"/>
     </head>
     <body>
         <div class="content">
-            <div>
-                <a href="/"><img src="/images/header.jpg"></a>
+            <div class="header">
+                <a href="/"><img src="/images/poacenlogo-top.png"></a>
             </div>
 % $m->call_next();
         </div>

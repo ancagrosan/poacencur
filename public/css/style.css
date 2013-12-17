@@ -1,24 +1,33 @@
+body{
+    background-image: url('/images/back.jpg');
+}
+
 .content{
     width:800px;
     margin:0 auto;
     font-family:'Bitter';
 }
 
+.content .header {
+    /*background-image: url('/images/glow-top-centru.png');*/
+    text-align: center;
+    padding: 70px 0 30px 0;
+}
+
 .upload-file{
-    padding-top: 40px;
-    width: 300px;
+    padding-top: 140px;
+    width: 250px;
     margin:0 auto;
 }
 
 .upload-img-btn{
-    font-size: 35px;
+    font-size: 20px;
     color: #fff;
     background: none;
-    width: 300px;
-    height: 100px;
-    line-height: 100px;
-    background-color: #83b81a;
-    font-weight:bold;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #1D9650;
     border: none !important;
     border-radius: 0;
 }
@@ -32,6 +41,11 @@
     width:auto;
     margin:0 auto;
     border: black 1px;
+    text-align: center;
+}
+
+.imaj{
+    border: 5px solid rgba(255, 255, 255, .7);
 }
 
 .modal-del{
@@ -56,3 +70,4 @@ body.loading {
 body.loading .modal {
     display: block;
 }
+
