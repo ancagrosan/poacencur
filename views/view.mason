@@ -71,7 +71,7 @@
 		<div class="modal-content">
 			<!-- dialog body -->
 			<div class="modal-body modal-confirm">
-				Daca stergi, dispare de tot. Sigur?
+				Daca stergi, dispare de tot. Ej sigur?
 			</div>
 			<!-- dialog buttons -->
 			<div class="modal-footer modal-confirm">

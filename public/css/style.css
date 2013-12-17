@@ -22,12 +22,12 @@ body{
 
 .upload-img-btn{
     font-size: 20px;
-    color: #6E6E6E;
+    color: #dc4056;
     background: none;
     width: 200px;
     height: 60px;
     line-height: 60px;
-    background-color: #FBF2EF;
+    background-color: rgba(255, 255, 255, .8);
     border: none !important;
     border-radius: 0;
 }
@@ -38,9 +38,9 @@ body{
     line-height: 60px;
     border: none !important;
     border-radius: 0;
-    color: #6E6E6E;
+    color: #dc4056;
     background: none;
-    background-color: #F5A9A9;
+    background-color: #fff;
 }
 
 .uploaded-img{
@@ -101,13 +101,13 @@ body.loading .modal {
 }
 
 #footer {
-    color: #fff;
-    background-color: #000;
+    color: #000;
+    background-color: #fff;
     padding-bottom: 0px;
     position:fixed;
     bottom:0;
     width:800%;
-    height:30px;
-    line-height: 30px;
+    height:60px;
+    line-height: 60px;
 }
 
