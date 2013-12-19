@@ -1,12 +1,14 @@
 package poacencur;
 
-use Digest::MD5 qw( md5_hex md5 ); 
+use Digest::MD5 qw( md5_hex md5 );
+use Image::Scale;
 
 use Dancer ':syntax';
 our $VERSION = '0.1';
 
 get '/' => sub {
-    template 'index';
+    
+    template 'index', { what => params->{what} };
 };
 
 post '/upload' => sub {
@@ -20,8 +22,14 @@ post '/upload' => sub {
             $full_image_path = config->{upload_path}.'/'.$new_dir_name;
 
             mkdir $full_image_path, 0755 || die 'nu fac niciun dir!!!';
+            
+            my $full_path = $full_image_path.'/img.jpg';
 
-            $file->copy_to($full_image_path.'/img.jpg');
+            $file->copy_to($full_path);
+            
+            my $img = Image::Scale->new($full_path) || die "Invalid JPEG file";
+            $img->resize_gd( { width => 800 } );
+            $img->save_jpeg($full_path);
         };
         if ($@){
             return redirect "/?what=nutesuparaaiavutoeroare";
@@ -73,5 +81,6 @@ any '/delete/:dir' => sub {
         return redirect "/view/$dir";
     }
 };
+
 
 true;

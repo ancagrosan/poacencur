@@ -9,9 +9,10 @@
 
 <br/>
 <div class="row-fluid">
-	<div class="pull-left">
-		<div><a href="/">&Icirc;napoi</a></div>
-		<div class="delete-btn"><a href="#myModal" data-toggle="modal">delete</a></div>
+	<div class="pull-left" style="padding-top:25px;">
+		<a href="/"><img width="20px;" src="/images/arrow_left.png"/> &Icirc;napoi</a>
+		<br/><br/>
+		<a href="#myModal" data-toggle="modal"><img width="20px;" src="/images/delete.ico"/> &#350;terge</a>
 	</div>
 	<div id="radio-sel" class="pull-right">
 		<div id="before" class="form-vertical">
@@ -75,8 +76,8 @@
 			</div>
 			<!-- dialog buttons -->
 			<div class="modal-footer modal-confirm">
-				<a data-dismiss="modal"><button type="button" class="btn">Cancel</button></a>
-				<a href="/delete/<% $dir_name %>"><button type="button" class="btn">OK</button></a>
+				<a data-dismiss="modal"><button type="button" class="btn">Nu</button></a>
+				<a href="/delete/<% $dir_name %>"><button type="button" class="btn">Da</button></a>
 			</div>
 		</div>
 	</div>
