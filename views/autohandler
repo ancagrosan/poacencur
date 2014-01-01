@@ -22,9 +22,6 @@
     </body>
     <div id="footer">
 		<span>&nbsp;&#64; <% (localtime)[5]+1900 %> poacencur</span>
-		
-
-		
     </div>
 	
 </html>

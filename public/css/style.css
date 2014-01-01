@@ -78,6 +78,11 @@ body.loading .modal {
     display: block;
 }
 
+.radio-sel{
+    color: white;
+    padding-right: 4px;
+}
+
 .socially-fb{
     pdding-top: 230px;
     line-height: 30px;
@@ -97,8 +102,11 @@ a:hover {
 
 .error{
     color: #fff;
-    width: 400px;
+    font-size: 17px;
+    width: 340px;
     margin: 0 auto;
+    font-style: italic;
+    text-align: center;
 }
 
 #footer {
@@ -110,4 +118,8 @@ a:hover {
     width:800%;
     height:30px;
     line-height: 30px;
+}
+
+input[type='radio'], label{   
+    vertical-align: baseline;
 }

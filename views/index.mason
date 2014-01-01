@@ -3,9 +3,9 @@
 </%args>
 
 %if( $what ){
-<span class="error">
+<div class="error">
 	Sper sa nu te superi, da' ai avut o eroare.
-</span>
+</div>
 % }
 
 <div class="rot-fluid">
