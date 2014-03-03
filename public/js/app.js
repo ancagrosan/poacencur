@@ -14,5 +14,5 @@ $("#r1, #r2, #r3, #r4, #r5, #r6").change(function () {
 
 	$('#r4').attr('checked', false);
 	$('#r5').attr('checked', false);
-  },2000);
+  },1300);
 });

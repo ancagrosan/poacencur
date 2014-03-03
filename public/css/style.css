@@ -120,6 +120,19 @@ a:hover {
     line-height: 30px;
 }
 
+.copyright {
+    width: 400%;
+}
+
 input[type='radio'], label{   
     vertical-align: baseline;
+}
+
+.loader{
+    margin-top: 40px;
+    margin-right: 50px;
+}
+
+.bold{
+    font-weight: bold;
 }
