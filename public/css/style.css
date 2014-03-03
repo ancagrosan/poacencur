@@ -9,13 +9,12 @@ body{
 }
 
 .content .header {
-    /*background-image: url('/images/glow-top-centru.png');*/
     text-align: center;
     padding: 70px 0 30px 0;
 }
 
 .upload-file{
-    padding-top: 140px;
+    padding-top: 100px;
     width: 250px;
     margin:0 auto;
 }
@@ -80,14 +79,7 @@ body.loading .modal {
 
 .radio-sel{
     color: white;
-    padding-right: 4px;
-}
-
-.socially-fb{
-    pdding-top: 230px;
-    line-height: 30px;
-    padding-left: 10px;
-    margin: 0 auto;
+    padding-right: 0px;
 }
 
 a {
@@ -115,13 +107,14 @@ a:hover {
     padding-bottom: 0px;
     position:fixed;
     bottom:0;
-    width:800%;
+    width:100%;
     height:30px;
     line-height: 30px;
 }
 
 .copyright {
-    width: 400%;
+    width:100%;
+    text-align: center;
 }
 
 input[type='radio'], label{   
@@ -135,4 +128,20 @@ input[type='radio'], label{
 
 .bold{
     font-weight: bold;
+}
+
+.padding-10{
+    padding: 10px;
+}
+
+.padding-top-40{
+    padding-top: 40px;
+}
+
+.padding-top-20{
+    padding-top: 20px;
+}
+
+.padding-top-15{
+    padding-top: 15px;
 }

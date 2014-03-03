@@ -7,18 +7,19 @@
 %   my ( $dir_name ) = $dir =~ m/uploads\/(.+)/;
 %   my $current_url = "http://poacencur.com/view/$dir_name";
 
-<br/>
 <div class="row-fluid">
-	<div class="row-fluid" style="padding: 20px;">
+	<div class="row-fluid padding-10 padding-top-20">
 		<div class="span3">
-			<a href="/"><img width="20" src="/images/arrow_left.png" alt="back"/> &Icirc;napoi</a>
-			<br/>
-			<a href="#myModal" data-toggle="modal"><img width="20" src="/images/delete.ico" alt="delete"/> &#350;terge</a>
-			<br/>
-			<div class="fb-share-button" data-href="<% $current_url %>" data-type="button_count"></div>
+			<div>
+				<a href="/"><img width="20" src="/images/arrow_left.png" alt="back"/> &Icirc;napoi</a>
+			</div>
+			<div class="padding-top-15"><a href="#myModal" data-toggle="modal">
+				<img width="20" src="/images/delete.ico" alt="delete"/> &#350;terge</a>
+			</div>
+			<div class="fb-share-button padding-top-15" data-href="<% $current_url %>" data-type="button_count"></div>
 		</div>
 		
-		<div id="radio-sel" class="offset7 span2 radio-sel">
+		<div id="radio-sel" class="offset6 span3 radio-sel">
 			<div id="before" class="form-vertical">
 				<span class="control-label bold">I-ai trage-o?</span>
 				<label class="radio"><input type="radio" name="wouldyou" id="r1" value="Da"/>Da</label>
@@ -43,15 +44,12 @@
 
 </div>
 
-<!-- set up the modal to start hidden and fade in and out -->
 <div id="myModal" class="modal fade modal-del">
 	<div class="modal-dialog">
 		<div class="modal-content">
-			<!-- dialog body -->
 			<div class="modal-body modal-confirm">
 				Daca stergi, dispare de tot. Ej sigur?
 			</div>
-			<!-- dialog buttons -->
 			<div class="modal-footer modal-confirm">
 				<a data-dismiss="modal"><button type="button" class="btn">Nu</button></a>
 				<a href="/delete/<% $dir_name %>"><button type="button" class="btn">Da</button></a>
@@ -61,5 +59,4 @@
 </div>
 
 % }
-
 <br/><br/>
