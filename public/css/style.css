@@ -145,3 +145,7 @@ input[type='radio'], label{
 .padding-top-15{
     padding-top: 15px;
 }
+
+.fb_iframe_widget iframe{
+    width: 45px; height: 60px;
+} 
