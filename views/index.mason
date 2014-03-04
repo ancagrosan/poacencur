@@ -21,7 +21,7 @@
 		  <div class="input-append">
 			<span class="btn btn-file upload-img-btn">
 				<span class="fileupload-new">Upload!</span>
-				<input type="file" id="upload_img" name="upload_img"/>
+				<input type="file" id="upload_img" name="upload_img" style="width: 230px; height: 70px;"/>
 			</span>
 		  </div>
 		</div>
