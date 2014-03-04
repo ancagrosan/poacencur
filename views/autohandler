@@ -19,10 +19,9 @@
             </div>
 % $m->call_next();
         </div>
-        <div id="footer">
-            <p class="copyright">&nbsp;&#64; <% (localtime)[5]+1900 %> poacencur</p>
-        </div>
-        
+            <div id="footer">
+                <p class="copyright">&#169;&nbsp;poacencur This website is a satire and should be treated like one. We do not own any of the content, which may be removed by anyone.</p>
+            </div>
         <!--scripts-->
         <script src="/js/lib/jquery.js"></script>
         <script src="/js/lib/bootstrap.min.js"></script>
